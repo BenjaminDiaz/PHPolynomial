@@ -20,7 +20,7 @@ Use
 ===
 
     $polynomial = new PHPolynomial/PHPolynomial/PolynomialParser("5x^2+3x+34); // Returns PolynomialObject
-    $derivative = $polynomial->differentiate(); // Returns another PolynomialObject corresponding to derivative
+    $derivative = $polynomial->differentiate(); // Returns another PolynomialObject
     echo $derivative; // '10x^1+3x^0'
 
 Demo Bootstrap template: https://github.com/IronSummitMedia/startbootstrap-bare/
