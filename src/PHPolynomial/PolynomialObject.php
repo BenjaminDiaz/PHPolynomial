@@ -41,6 +41,7 @@ class PolynomialObject implements \JsonSerializable {
 			$operators [] = '+';
 		}
 		$this->derivative = new PolynomialObject ( $terms, $operators );
+		return $this->derivative;
 	}
 	public function __toString() {
 		$str = '';
