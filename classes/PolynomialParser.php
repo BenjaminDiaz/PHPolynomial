@@ -14,7 +14,7 @@ class PolynomialParser {
 					elseif ($match [0] == $match [1]) {
 						$coefficient = $match [1];
 						$exponent = 0;
-					} 					// If ax^n
+					} 					// If ax^n or x^n
 					else {
 						$coefficient = (empty ( $match [1] )) ? 1 : $match [1];
 						$exponent = (empty ( $match [2] )) ? 1 : $match [2];
