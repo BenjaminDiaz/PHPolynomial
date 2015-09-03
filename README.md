@@ -19,7 +19,9 @@ Include in your composer.json file:
 Use
 ===
 
-    $polynomial = new BenjaminDiaz/PHPolynomial/PolynomialParser("5x^2+3x+34);
+    $polynomial = new PHPolynomial/PHPolynomial/PolynomialParser("5x^2+3x+34); // Returns PolynomialObject
+    $derivative = $polynomial->differentiate(); // Returns another PolynomialObject corresponding to derivative
+    echo $derivative; // '10x^1+3x^0'
 
 Demo Bootstrap template: https://github.com/IronSummitMedia/startbootstrap-bare/
 
