@@ -1,8 +1,8 @@
 <?php
-include_once('classes/PolynomialObject.php');
-include_once('classes/PolynomialTerm.php');
-include_once('classes/PolynomialParser.php');
+require 'src/PHPolynomial/PolynomialObject.php';
+require 'src/PHPolynomial/PolynomialTerm.php';
+require 'src/PHPolynomial/PolynomialParser.php';
 $polynomial = $_POST['polynomial'];
-$polynomial = PolynomialParser::parse($polynomial);
+$polynomial = PHPolynomial\PHPolynomial\PolynomialParser::parse($polynomial);
 $polynomial->differentiate();
 echo json_encode($polynomial);
