@@ -7,7 +7,7 @@
 class PolynomialParser {
 	public static function parse($str) {
 		$terms = array ();
-		$pattern = '/(\-*\d*\/*\d*)[a-z]\^*(\d*)/';
+		$pattern = '/(\-*\d*\/*\d*)[a-z]*\^*(\d*)/';
 		if (preg_match_all ( $pattern, $str, $matches, PREG_SET_ORDER )) {
 			foreach ( $matches as $match ) {
 				
